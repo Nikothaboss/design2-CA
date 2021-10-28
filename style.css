@@ -5,13 +5,18 @@
 }
 
 header {
-  font-size: 20px;
-  color: #3d3d3d;
-  background: #cebda2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  font-size: 24px;
+  color: #f2f2f2;
+  background: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
+  padding: 20px 60px;
+  z-index: 99;
 }
 
 .nav {
@@ -23,13 +28,17 @@ header {
 }
 
 body {
-  background: #a47251;
-  background-image: url("./img/4.svg");
+  background: #cebda2;
+  background-image: url("./img/41.svg");
+  /* background-image: url("./img/4.svg"); */
 }
 
 .hero {
-  background-image: url("./img/decor.jpg");
-  height: 70vh;
+  background-image: url("./img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,12 +58,19 @@ body {
 .hero h2 {
   font-size: 48px;
   z-index: 9999;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 5px;
+  transform: translateY(-50px);
 }
 
 .cards {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  margin: 50px 0;
+  grid-gap: 20px;
+  place-items: center;
+  padding: 0 20px;
 }
 .cards img {
   width: 100%;
@@ -67,6 +83,8 @@ body {
   height: 400px;
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 footer {
@@ -74,6 +92,6 @@ footer {
   color: #f2f2f2;
   justify-content: center;
   align-items: center;
-  background: #758168;
+  background: #57605d;
   height: 8vh;
 }
