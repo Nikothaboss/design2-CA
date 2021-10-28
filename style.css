@@ -7,16 +7,23 @@
 header {
   position: absolute;
   top: 0;
-  right: 0;
-  left: 0;
   font-size: 24px;
   color: #f2f2f2;
   background: rgba(0, 0, 0, 0.2);
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   padding: 20px 60px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   z-index: 99;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  grid-column: 2;
 }
 
 .nav {
@@ -24,7 +31,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
+  grid-column: 4;
+  /* width: 30%; */
+}
+
+.hamburger {
+  display: none;
 }
 
 body {
@@ -38,7 +50,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +70,7 @@ body {
 .hero h2 {
   font-size: 48px;
   z-index: 9999;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 5px;
   transform: translateY(-50px);
@@ -66,7 +78,7 @@ body {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 50px 0;
   grid-gap: 20px;
   place-items: center;
@@ -79,8 +91,8 @@ body {
 }
 
 .card {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -93,5 +105,38 @@ footer {
   justify-content: center;
   align-items: center;
   background: #57605d;
-  height: 8vh;
+  height: 100vh;
+}
+
+@media (max-width: 1354px) {
+  .logo {
+    grid-column: 1;
+  }
+
+  .nav {
+    grid-column: 4/7;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hamburger {
+    display: flex;
+    grid-column: 7;
+    align-items: center;
+    font-size: 34px;
+  }
+
+  .nav {
+    display: none;
+  }
 }
