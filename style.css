@@ -9,7 +9,7 @@ header {
   top: 0;
   font-size: 24px;
   color: #f2f2f2;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   /* display: flex;
   justify-content: space-between;
   align-items: center; */
@@ -68,12 +68,15 @@ body {
 }
 
 .hero h2 {
-  font-size: 48px;
+  color: #cdb389;
+  font-size: 40px;
   z-index: 9999;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   padding: 20px;
   border-radius: 5px;
   transform: translateY(-50px);
+  width: 50%;
+  text-align: center;
 }
 
 .cards {
@@ -108,6 +111,86 @@ footer {
   height: 100vh;
 }
 
+.contact-info {
+  width: 45%;
+  font-size: 1.5rem;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  width: 40%;
+}
+
+/* .icon {
+  margin-right: 25px;
+} */
+
+.location-info p {
+  margin-bottom: 5px;
+}
+
+.form-wrapper {
+  width: 40%;
+}
+
+.form-wrapper h1 {
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 100%;
+  /* background: white; */
+  color: white;
+  border-radius: 1%;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+  /* padding: 10px; */
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 180px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.checkbox input {
+  width: 10%;
+}
+
 @media (max-width: 1354px) {
   .logo {
     grid-column: 1;
@@ -121,12 +204,14 @@ footer {
 @media (max-width: 1024px) {
   .hero h2 {
     font-size: 36px;
+    transform: translateY(-58px);
   }
 }
 
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 28px;
+    width: 90%;
   }
 
   .hamburger {
