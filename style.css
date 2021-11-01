@@ -32,6 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
   grid-column: 4;
+  color: #cdb389;
   /* width: 30%; */
 }
 
@@ -40,7 +41,7 @@ header {
 }
 
 body {
-  background: #cebda2;
+  background: #cdb389;
   background-image: url("./img/41.svg");
   /* background-image: url("./img/4.svg"); */
 }
