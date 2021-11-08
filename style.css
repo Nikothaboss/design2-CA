@@ -1,7 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,700;0,900;1,700;1,900&family=Pridi:wght@300;500&display=swap");
+/*
+. font-family: 'Montserrat Alternates', sans-serif;
+    bold 700 + italic
+    black 900 + italic
+
+
+. font-family: 'Pridi', serif; 
+    light 300
+    medium 500
+
+
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Pridi", serif;
 }
 
 header {
@@ -27,6 +42,7 @@ header {
 }
 
 .nav {
+  font-family: "Pridi", serif;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -69,6 +85,9 @@ body {
 }
 
 .hero h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 900;
+  font-style: italic;
   color: #cdb389;
   font-size: 40px;
   z-index: 9999;
@@ -86,6 +105,8 @@ body {
 }
 
 .products-header {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2rem;
   text-align: center;
   transform: translateY(150px);
   background: rgba(0, 0, 0, 0.733);
@@ -125,6 +146,7 @@ body {
 }
 
 .bitch {
+  font-family: "Pridi", serif;
   background: #f2f2f2;
   color: #3d3d3d;
   padding: 20px;
@@ -170,6 +192,7 @@ footer {
 }
 
 .form-wrapper h1 {
+  font-family: "Montserrat Alternates", sans-serif;
   margin-bottom: 40px;
 }
 
